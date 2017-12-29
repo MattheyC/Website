@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="nav" id="nav">
+      <a href="javascript:void(0)" class="close" onclick="closeNav()">&times;</a>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <span onclick="openNav()" class="open" id="open">&#9776;</span>
+    <script src="js/navanim.js"></script>
+    <div class="content-head">
+      <div class="content-logo">
+        <img src="images/image1.jpeg" alt="image1">
+      </div>
+      <h1>Contact Us</h1>
+      <p><span>Contact us</span> to get a quote for your project, get an advice or just say hi! :)</p>
+    </div>
+    <main>
+      <form id="contact-form" action="/" method="post">
+        <h3>Get in touch</h3>
+        <h4>Fill in the form below, and we'll get back to you within 24 hours.</h4>
+        <div>
+          <label>
+          <span>Name: (required)</span>
+          <input placeholder="Please enter your name" type="text" tabindex="1" required autofocus>
+          </label>
+        </div>
+        <div>
+          <label>
+          <span>Email: (required)</span>
+          <input placeholder="Please enter your email address" type="email" tabindex="2" required>
+          </label>
+        </div>
+        <div>
+          <label>
+          <span>Telephone: (required)</span>
+          <input placeholder="Please enter your number" type="tel" tabindex="3" required>
+          </label>
+        </div>
+        <div>
+          <label>
+          <span>Message: (required)</span>
+          <textarea placeholder="Include all the details you can" tabindex="5" required></textarea>
+          </label>
+        </div>
+        <div>
+          <button name="submit" type="submit" id="contact-submit">Send Email</button>
+        </div>
+      </form>
+      <script src="js/contact.js"></script>
+    </main>
+  </body>
+</html>
